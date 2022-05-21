@@ -1,12 +1,19 @@
+import { makeStyles } from '@mui/styles';
 
+const useStyles = makeStyles({
+    logo: {
+        width: 100
+    }
+});
 
 const Header = () => {
 
+    const classes = useStyles();
     const logo = "https://miro.medium.com/max/802/1*dLWPk_rziSpWhPx1UWONbQ@2x.png";
 
     return (
         <>
-            <img src={logo} alt="POSTMAN-LITE" />
+            <img src={logo} className={classes.logo} alt="POSTMAN-LITE" />
         </>
     );
 };
