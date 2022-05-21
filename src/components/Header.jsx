@@ -1,22 +1,22 @@
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
-    logo: {
-        width: 100,
-        padding: 5
-    }
+  logo: {
+    width: 100,
+    padding: 5,
+  },
 });
 
 const Header = () => {
+  const classes = useStyles();
+  const logo =
+    "https://miro.medium.com/max/802/1*dLWPk_rziSpWhPx1UWONbQ@2x.png";
 
-    const classes = useStyles();
-    const logo = "https://miro.medium.com/max/802/1*dLWPk_rziSpWhPx1UWONbQ@2x.png";
-
-    return (
-        <>
-            <img src={logo} className={classes.logo} alt="POSTMAN-LITE" />
-        </>
-    );
+  return (
+    <>
+      <img src={logo} className={classes.logo} alt="POSTMAN-LITE" />
+    </>
+  );
 };
 
-export default Header ;
+export default Header;
