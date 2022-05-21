@@ -1,9 +1,10 @@
-
+// components
+import Header from './Header';
 
 const Home = () => {
     return (
         <p>
-            Tanmay Gupta
+            <Header />
         </p>
     )
 };
