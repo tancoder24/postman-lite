@@ -2,7 +2,7 @@ import { Box, Typography, Table, TableHead, TableBody, TableRow, TableCell } fro
 import { makeStyles } from "@mui/styles";
 
 // components
-// import AddRow from "./AddRow";
+import AddRow from "./AddRow";
 
 const useStyles = makeStyles({
     tableCell: {
@@ -30,7 +30,7 @@ const CreateTable = ({ text }) => {
           </TableRow>
         </TableHead>
         <TableBody>
-            {/* <AddRow /> */}
+            <AddRow />
         </TableBody>
       </Table>
     </Box>
