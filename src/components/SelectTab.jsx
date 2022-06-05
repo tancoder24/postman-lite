@@ -6,6 +6,9 @@ const useStyles = makeStyles({
   component: {
       marginTop: 20 
   },
+  tab:{
+    textTransform: ['none', '!important']
+  }
 });
 
 const SelectTab = () => {
@@ -22,11 +25,12 @@ const SelectTab = () => {
       <Tabs
         value={value}
         onChange={handleChange}
-        aria-label="basic tabs example"
+        textColor="none"  
+        TabIndicatorProps= {{ sx: { backgroundColor: "#F26B3A", height:4, bottom: 2 } }}
       >
-        <Tab label="Params" />
-        <Tab label="Headers" />
-        <Tab label="Body" />
+        <Tab label="Params" className={classes.tab} />
+        <Tab label="Headers" className={classes.tab} />
+        <Tab label="Body" className={classes.tab} />
       </Tabs>
       <Box
         role="tabpanel"
