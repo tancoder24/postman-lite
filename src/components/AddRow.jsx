@@ -1,4 +1,4 @@
-import { TableRow, TableCell } from "@mui/material";
+import { TableRow, TableCell, Checkbox, TextField } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
@@ -6,7 +6,13 @@ const useStyles = makeStyles({
     border: "1px solid rgba(224, 224, 224, 1)",
     borderCollapse: "collapse",
     padding: ["7px 5px", "!important"]
-}
+  },
+  checkbox: {
+    padding: ["2px 5px", "!important"]
+  },
+  textfield: {
+    width: "100%"
+  }
 });
 
 const AddRow = () => {
@@ -15,9 +21,24 @@ const AddRow = () => {
 
     return (
       <TableRow>
-        <TableCell className={classes.tableCell} >1</TableCell>
-        <TableCell className={classes.tableCell} >2</TableCell>
-        <TableCell className={classes.tableCell} >3</TableCell>
+        <TableCell className={classes.tableCell} >
+          <Checkbox 
+            size="large"
+            className={classes.checkbox}
+          />
+        </TableCell>
+        <TableCell className={classes.tableCell} >
+          <TextField 
+            className={classes.textfield}
+            inputProps={{ style: { height: 30, padding: "0 5px" } }}
+          />
+        </TableCell>
+        <TableCell className={classes.tableCell} >
+          <TextField 
+            className={classes.textfield}
+            inputProps={{ style: { height: 30, padding: "0 5px" } }}
+          />
+        </TableCell>
       </TableRow>
     )
 };
