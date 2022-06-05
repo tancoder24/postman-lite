@@ -1,6 +1,9 @@
 import { Box, Select, MenuItem, TextField, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
+// components
+import CreateTable from "./CreateTable";
+
 const useStyles = makeStyles({
   component: {
     display: "flex",
